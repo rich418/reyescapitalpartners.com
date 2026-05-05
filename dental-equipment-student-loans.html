@@ -586,7 +586,7 @@ Inicia saludando y preguntando qué equipo quieren financiar.`;
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          model: 'claude-sonnet-4-20250514',
+          model: 'claude-sonnet-4-6',
           max_tokens: 300,
           system: lang === 'es' ? SYSTEM_ES : SYSTEM_EN,
           messages: conversationHistory
