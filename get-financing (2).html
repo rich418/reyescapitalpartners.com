@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Equipment Financing | Reyes Capital Partners</title>
+<meta name="description" content="Apply for equipment financing in minutes. 24-hour decisions, challenged credit OK, startups OK, bilingual EN/ES. Based in Ventura, CA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #1B2A4A; --blue: #2E5C8A; --gold: #C5922D;
+    --light: #F7F9FC; --text: #2C2C2C; --muted: #6B7280; --border: #D8DEE9;
+  }
+  body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; line-height: 1.6; }
+
+  .hero { background: var(--navy); padding: 56px 24px 40px; text-align: center; }
+  .hero .eyebrow { display:inline-block; background:var(--gold); color:#fff; font-size:11px; font-weight:600; letter-spacing:.12em; text-transform:uppercase; padding:4px 14px; border-radius:2px; margin-bottom:18px; }
+  .hero h1 { font-family:'Playfair Display',serif; font-size:clamp(26px,5vw,42px); color:#fff; line-height:1.2; max-width:680px; margin:0 auto 14px; }
+  .hero p { color:#A8B8CC; font-size:16px; max-width:540px; margin:0 auto; }
+
+  .trust { display:flex; flex-wrap:wrap; justify-content:center; gap:24px; padding:20px 24px; background:var(--light); border-bottom:1px solid var(--border); }
+  .trust span { font-size:14px; font-weight:600; color:var(--navy); }
+  .trust span::before { content:"\2713"; color:var(--gold); font-weight:700; margin-right:6px; }
+
+  .wrap { max-width:640px; margin:0 auto; padding:40px 24px 64px; }
+
+  form { display:grid; gap:18px; }
+  .row { display:grid; gap:18px; }
+  @media(min-width:520px){ .row.two { grid-template-columns:1fr 1fr; } }
+
+  label { display:block; font-size:13px; font-weight:600; color:var(--navy); margin-bottom:6px; }
+  .req::after { content:" *"; color:var(--gold); }
+  input, select, textarea {
+    width:100%; padding:12px 14px; font-family:inherit; font-size:15px; color:var(--text);
+    border:1px solid var(--border); border-radius:7px; background:#fff; transition:border-color .15s;
+  }
+  input:focus, select:focus, textarea:focus { outline:none; border-color:var(--blue); box-shadow:0 0 0 3px rgba(46,92,138,.12); }
+  textarea { resize:vertical; min-height:90px; }
+  .hint { font-size:12px; color:var(--muted); margin-top:5px; }
+
+  .section-label { font-family:'Playfair Display',serif; font-size:18px; color:var(--navy); margin:14px 0 -2px; padding-top:14px; border-top:1px solid var(--border); }
+  .section-label:first-of-type { border-top:none; padding-top:0; }
+
+  button { background:var(--gold); color:#fff; font-family:inherit; font-size:16px; font-weight:600; border:none; padding:15px; border-radius:7px; cursor:pointer; margin-top:8px; transition:background .15s; }
+  button:hover { background:#a87d24; }
+
+  .privacy { font-size:12px; color:var(--muted); text-align:center; margin-top:4px; }
+  .lang { text-align:center; margin-top:24px; font-size:14px; }
+  .lang a { color:var(--blue); font-weight:600; text-decoration:none; }
+
+  .success { display:none; text-align:center; padding:48px 24px; }
+  .success.show { display:block; }
+  .success h2 { font-family:'Playfair Display',serif; color:var(--navy); font-size:26px; margin-bottom:12px; }
+  .success p { color:var(--muted); max-width:420px; margin:0 auto; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <span class="eyebrow">Equipment Financing Application</span>
+  <h1>Get Financing for Your Equipment</h1>
+  <p>Tell us about your deal. We respond fast — usually within the hour — and decisions come in 24 hours.</p>
+</div>
+
+<div class="trust">
+  <span>24-hour decisions</span>
+  <span>Challenged credit OK</span>
+  <span>Startups OK</span>
+  <span>Bilingual EN/ES</span>
+</div>
+
+<div class="wrap">
+  <form id="financeForm" action="https://api.web3forms.com/submit" method="POST">
+    <!-- SETUP: replace this access key with your own free key from web3forms.com -->
+    <input type="hidden" name="access_key" value="7504da3b-c593-4d5f-a47a-a64e15197745">
+    <input type="hidden" name="subject" value="NEW RCP LEAD — Equipment Financing Inquiry">
+    <input type="hidden" name="from_name" value="RCP Website">
+    <input type="checkbox" name="botcheck" style="display:none">
+
+    <div class="section-label">Your Contact Info</div>
+    <div class="row two">
+      <div>
+        <label class="req" for="name">Full Name</label>
+        <input type="text" id="name" name="Name" required>
+      </div>
+      <div>
+        <label class="req" for="phone">Phone</label>
+        <input type="tel" id="phone" name="Phone" required>
+      </div>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="Email">
+    </div>
+
+    <div class="section-label">Your Business</div>
+    <div class="row two">
+      <div>
+        <label for="biz">Business Name</label>
+        <input type="text" id="biz" name="Business Name">
+      </div>
+      <div>
+        <label class="req" for="tib">Years in Business</label>
+        <select id="tib" name="Years in Business" required>
+          <option value="">Select...</option>
+          <option>Startup / under 1 year</option>
+          <option>1 - 2 years</option>
+          <option>2 - 5 years</option>
+          <option>5+ years</option>
+        </select>
+      </div>
+    </div>
+    <div class="row two">
+      <div>
+        <label for="credit">Credit Score (ballpark)</label>
+        <select id="credit" name="Credit Ballpark">
+          <option value="">Not sure</option>
+          <option>720+</option>
+          <option>680 - 719</option>
+          <option>640 - 679</option>
+          <option>600 - 639</option>
+          <option>Below 600</option>
+        </select>
+        <div class="hint">A rough range is fine — no hard credit pull to start.</div>
+      </div>
+      <div>
+        <label for="state">State</label>
+        <input type="text" id="state" name="State" value="CA">
+      </div>
+    </div>
+
+    <div class="section-label">The Equipment</div>
+    <div>
+      <label class="req" for="equip">What are you financing?</label>
+      <input type="text" id="equip" name="Equipment" placeholder="e.g. 2021 CAT 308 excavator" required>
+      <div class="hint">Year, make, model if you have it.</div>
+    </div>
+    <div class="row two">
+      <div>
+        <label for="cost">Approximate Cost</label>
+        <input type="text" id="cost" name="Equipment Cost" placeholder="$">
+      </div>
+      <div>
+        <label for="condition">New or Used?</label>
+        <select id="condition" name="Condition">
+          <option value="">Select...</option>
+          <option>New</option>
+          <option>Used</option>
+        </select>
+      </div>
+    </div>
+    <div>
+      <label for="seller">Who are you buying from?</label>
+      <select id="seller" name="Seller Type">
+        <option value="">Select...</option>
+        <option>Dealer</option>
+        <option>Private party</option>
+        <option>Not sure yet / still shopping</option>
+      </select>
+    </div>
+    <div>
+      <label for="notes">Anything else we should know?</label>
+      <textarea id="notes" name="Notes" placeholder="Past bankruptcy, tax liens, time crunch, etc. — the more we know up front, the faster we move."></textarea>
+    </div>
+
+    <button type="submit">Submit — Get My Options</button>
+    <p class="privacy">No hard credit pull to get started. Your info stays private and is used only to find your financing.</p>
+  </form>
+
+  <div class="success" id="successMsg">
+    <h2>Got it — we're on it.</h2>
+    <p>Oscar will reach out shortly, usually within the hour during business hours. If you need to talk now, call or text <strong>(714) 388-2672</strong>.</p>
+  </div>
+
+  <div class="lang">
+    ¿Prefiere español? Llame o escriba a Oscar directamente: <a href="tel:7143882672">(714) 388-2672</a>
+  </div>
+</div>
+
+<script>
+  const form = document.getElementById('financeForm');
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const obj = {};
+    data.forEach((val, key) => { if(key !== 'botcheck') obj[key] = val; });
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(obj)
+      });
+      const json = await res.json();
+      if (json.success) {
+        form.style.display = 'none';
+        document.getElementById('successMsg').classList.add('show');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        alert('Something went wrong. Please call or text Oscar at (714) 388-2672.');
+      }
+    } catch (err) {
+      alert('Something went wrong. Please call or text Oscar at (714) 388-2672.');
+    }
+  });
+</script>
+
+</body>
+</html>
